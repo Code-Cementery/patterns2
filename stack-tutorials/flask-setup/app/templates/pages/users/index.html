@@ -1,0 +1,6 @@
+{% if current_user and current_user.is_authenticated %}
+  <b>Hello, {{ current_user.username }}!</b>
+  <a href="{{url_for('users.users_signout')}}">Sign Out</a>
+{% else %}
+  <a href="{{url_for('users.users_signin')}}">Sign In</a>
+{% endif %}

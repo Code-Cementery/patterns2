@@ -1,0 +1,8 @@
+query FilterTradesBySymbol {
+  management {
+   trades {
+     name,
+     symbol
+   }
+  }
+}

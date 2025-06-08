@@ -1,0 +1,12 @@
+bcrypt~=4.0
+Flask~=2.2
+Flask-Cors~=3.0
+Flask-Login~=0.6
+Flask-Mail~=0.9
+flask_wtf~=1.1
+Jinja2~=3.1
+SQLAlchemy~=1.4
+pydantic[dotenv]~=1.10
+faker~=16.6
+#aiohttp~=3.8
+#asyncpg~=0.27

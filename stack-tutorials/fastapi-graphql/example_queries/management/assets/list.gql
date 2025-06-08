@@ -1,0 +1,8 @@
+query Query {
+  management {
+   assets {
+     name,
+     symbol
+   }
+  }
+}

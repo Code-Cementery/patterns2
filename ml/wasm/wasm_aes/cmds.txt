@@ -1,0 +1,15 @@
+# emcc -O3 hello.c -o hello.js 
+
+
+# optimizes names as well:
+# emcc hello.c -Os -s WASM=1
+
+emcc hello.c -O2 -s WASM=1
+
+
+emrun --no_browser --port 8080 .
+
+
+
+
+# activate emscripten env

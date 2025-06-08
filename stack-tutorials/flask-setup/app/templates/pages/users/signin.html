@@ -1,0 +1,29 @@
+<div>
+  <form method="post">
+    {{ form.csrf_token }}
+
+    {% if form.username.errors %}
+        <ul class="errors">
+        {% for error in form.username.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {{ form.username.label }} {{ form.username(size=20) }}
+    <br/>
+
+    {% if form.password.errors %}
+        <ul class="errors">
+        {% for error in form.password.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {{ form.password.label }} {{ form.password(size=20) }}
+    <br/>
+
+    {{ form.remember.label }} {{ form.remember() }}
+
+    <button type="submit">Sign In</button>
+  </form>
+</div>

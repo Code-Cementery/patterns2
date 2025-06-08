@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Coalition";
+    src: url(/fonts/Coalition_v2.ttf);
+}
+
+
+/* BRAND & Texts */
+.font-brand {
+    font-family: 'Coalition', Helvetica, 'Times New Roman';
+    font-weight: normal;
+
+    font-size: 128px;
+    margin-bottom: 0px;
+
+    color: #0F0F0F;
+    letter-spacing: 10px;
+
+    text-shadow:
+     -1px -1px 0 #0d6aff,
+      1px -1px 0 #0d6aff,
+      -1px 1px 0 #0d6aff,
+       1px 1px 0 #0d6aff;
+}
+
+.btn-brand {
+    color: #0d6aff;
+    background-color: black;
+    border: solid 1px #0d6aff;
+}
+.btn-brand:hover {
+    color: #8cc6ff;
+    background-color: #050505;
+    border: solid 1px #0d6aff;
+}
+
+body {
+  background: black;
+  color: #a7ccdb;
+}
+
+#view_switch {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}

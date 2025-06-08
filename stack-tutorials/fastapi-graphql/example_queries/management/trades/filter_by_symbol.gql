@@ -1,0 +1,25 @@
+query Query {
+  management {
+    trades(base: "BTC", first: 10, after: "MjAyMC0wMS0xNlQwMTowMDowMCswMTowMA==") {
+      pageInfo {
+        hasNextPage
+        endCursor
+        startCursor
+        hasPreviousPage
+      }
+      totalCount,
+      edges {
+        cursor
+        node {
+          base {
+            symbol
+            name
+          }
+          placedAt
+          amount
+          price
+        }
+      }
+    }
+  }
+}
